@@ -7,7 +7,7 @@
 #include "agg_renderer_scanline.h"
 #include "agg_conv_bspline.h"
 #include "agg_conv_segmentator.h"
-#include "agg_font_win32_tt.h"
+#include "agg_font_freetype.h"
 #include "agg_trans_single_path.h"
 #include "ctrl/agg_cbox_ctrl.h"
 #include "ctrl/agg_slider_ctrl.h"
