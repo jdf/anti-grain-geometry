@@ -130,6 +130,7 @@ namespace agg
                 cmd = path_cmd_move_to;
                 m_status = polygon;
                 m_src_vertex = 0;
+                /* no break */
 
             case polygon:
                 if(m_closed)

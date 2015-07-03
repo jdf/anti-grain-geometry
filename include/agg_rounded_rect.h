@@ -32,7 +32,9 @@ namespace agg
     class rounded_rect
     {
     public:
-        rounded_rect() {}
+    	rounded_rect() :
+			m_x1(), m_y1(), m_x2(), m_y2(), m_rx1(), m_ry1(), m_rx2(), m_ry2(),
+			m_rx3(), m_ry3(), m_rx4(), m_ry4(), m_status(), m_arc() {}
         rounded_rect(double x1, double y1, double x2, double y2, double r);
 
         void rect(double x1, double y1, double x2, double y2);

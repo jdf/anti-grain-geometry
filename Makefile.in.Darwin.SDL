@@ -1,5 +1,5 @@
 AGGLIBS= -lagg  -L/usr/local/lib -lSDLmain -lSDL -framework Cocoa -framework OpenGL
-AGGCXXFLAGS = -O3 -I/Library/Frameworks/SDL.framework/Headers -L/usr/lib
+AGGCXXFLAGS = -O3 -I/usr/local/include/SDL -L/usr/local/lib
 CXX = g++
 C = gcc
 #CXX = icc

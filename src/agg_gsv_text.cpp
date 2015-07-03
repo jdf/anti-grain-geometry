@@ -615,6 +615,7 @@ namespace agg
                     break;
                 }
                 m_status = next_char;
+                /* no break */
 
             case next_char:
                 if(*m_cur_chr == 0) 
@@ -633,6 +634,7 @@ namespace agg
                 m_bglyph = m_glyphs + value(m_indices + idx);
                 m_eglyph = m_glyphs + value(m_indices + idx + 2);
                 m_status = start_glyph;
+                /* no break */
 
             case start_glyph:
                 *x = m_x;

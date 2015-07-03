@@ -365,6 +365,8 @@ namespace agg
 
         switch(m_move_what)
         {
+        case move_nothing:
+        	return false;
         case move_value1:
             if(fabs(m_x2 - m_x1) > fabs(m_y2 - m_y1))
             {

@@ -158,6 +158,7 @@ namespace agg
             case close_first:
                 m_status = outline2;
                 cmd = path_cmd_move_to;
+                /* no break */
 
             case outline2:
                 if(m_src_vertex <= unsigned(m_closed == 0))

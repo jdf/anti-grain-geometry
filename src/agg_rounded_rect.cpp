@@ -112,44 +112,52 @@ namespace agg
                        pi, pi+pi*0.5);
             m_arc.rewind(0);
             m_status++;
+            /* no break */
 
         case 1:
             cmd = m_arc.vertex(x, y);
             if(is_stop(cmd)) m_status++;
             else return cmd;
+            /* no break */
 
         case 2:
             m_arc.init(m_x2 - m_rx2, m_y1 + m_ry2, m_rx2, m_ry2,
                        pi+pi*0.5, 0.0);
             m_arc.rewind(0);
             m_status++;
+            /* no break */
 
         case 3:
             cmd = m_arc.vertex(x, y);
             if(is_stop(cmd)) m_status++;
             else return path_cmd_line_to;
+            /* no break */
 
         case 4:
             m_arc.init(m_x2 - m_rx3, m_y2 - m_ry3, m_rx3, m_ry3,
                        0.0, pi*0.5);
             m_arc.rewind(0);
             m_status++;
+            /* no break */
 
         case 5:
             cmd = m_arc.vertex(x, y);
             if(is_stop(cmd)) m_status++;
             else return path_cmd_line_to;
+            /* no break */
 
         case 6:
             m_arc.init(m_x1 + m_rx4, m_y2 - m_ry4, m_rx4, m_ry4,
                        pi*0.5, pi);
             m_arc.rewind(0);
             m_status++;
+            /* no break */
 
         case 7:
             cmd = m_arc.vertex(x, y);
             if(is_stop(cmd)) m_status++;
             else return path_cmd_line_to;
+            /* no break */
 
         case 8:
             cmd = path_cmd_end_poly | path_flags_close | path_flags_ccw;
